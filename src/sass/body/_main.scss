@@ -1,0 +1,44 @@
+.main_container {
+    display: flex;
+}
+
+.description {
+    width: 30%;
+    min-width: 40rem;
+    height: 80vh;
+    // height: 100%;
+    border-radius: 3px;
+    background-color: var(--color-four);
+    position: relative;
+    z-index: 1;
+}
+// .description .desc_img {
+//     width: 98%;
+// }
+.description .desc_img img {
+    width: 100%;
+}
+
+.content_desc {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.content_desc h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.content_desc p.effect {
+    // font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding-bottom: 3rem;
+}
+span.effect {
+    border-right: 1px solid;
+    animation: caret 1s steps(1) infinite;
+}

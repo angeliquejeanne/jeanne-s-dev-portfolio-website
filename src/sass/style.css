@@ -18,9 +18,12 @@ img {
 }
 
 :root {
-  --color-bg: linear-gradient(to bottom right,#002f4b,#dc4225);
+  --color-bg: linear-gradient(to bottom right,#1e303a,#9b001a);
   --color-text: #000;
-  --color-primary: red;
+  --color-primary: snow;
+  --color-secondary: rgb(58, 134, 179);
+  --color-third: #9b001a;
+  --color-four: rgba(211, 211, 211, 0.5);
 }
 
 body {
@@ -51,11 +54,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #52708b;
+  background-color: var(--color-secondary);
 }
 
 nav {
-  background-color: #00ff37;
+  background-color: #9b001a;
   margin: 2rem 1rem 0 0;
   border-radius: 3px;
 }
@@ -105,5 +108,62 @@ nav li a:hover {
 
 .active > * {
   color: var(--color-primary);
+}
+
+.main_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description {
+  width: 30%;
+  min-width: 40rem;
+  height: 80vh;
+  border-radius: 3px;
+  background-color: var(--color-four);
+  position: relative;
+  z-index: 1;
+}
+
+.description .desc_img img {
+  width: 100%;
+}
+
+.content_desc {
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.content_desc h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.content_desc p.effect {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding-bottom: 3rem;
+}
+
+span.effect {
+  border-right: 1px solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
