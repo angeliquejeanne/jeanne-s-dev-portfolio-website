@@ -2,5 +2,23 @@ body {
     height: 100vh;
     width: 100%;
     background-image: var(--color-bg);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 2rem;
+
     overflow: hidden;
+}
+
+.global {
+    width: 90%;
+    max-width: 110rem;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(82, 112, 139);
 }

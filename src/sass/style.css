@@ -1,12 +1,109 @@
 *, ::after, ::before {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 25%;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+:root {
+  --color-bg: linear-gradient(to bottom right,#002f4b,#dc4225);
+  --color-text: #000;
+  --color-primary: red;
 }
 
 body {
   height: 100vh;
   width: 100%;
   background-image: var(--color-bg);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
   overflow: hidden;
+}
+
+.global {
+  width: 90%;
+  max-width: 110rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #52708b;
+}
+
+nav {
+  background-color: #00ff37;
+  margin: 2rem 1rem 0 0;
+  border-radius: 3px;
+}
+
+nav ul {
+  list-style: none;
+  width: 7rem;
+}
+
+nav ul li {
+  padding: 1rem 0;
+}
+
+nav ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+nav li i {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  padding-bottom: 5px;
+}
+
+nav li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav li a:hover {
+  color: var(--color-primary);
+}
+
+.active > * {
+  color: var(--color-primary);
 }
 /*# sourceMappingURL=style.css.map */

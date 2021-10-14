@@ -1,5 +1,17 @@
 @import
-'reset/reset';
+'reset/reset',
+'reset/colors',
+'reset/fonts';
 
 @import
-'body/body';
+'body/body',
+'body/header',
+'body/main',
+'body/footer';
+
+@import
+'animations/animations';
+
+@import
+'responsive/max600',
+'responsive/max850';
