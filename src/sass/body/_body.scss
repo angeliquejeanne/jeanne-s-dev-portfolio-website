@@ -17,8 +17,10 @@ body {
 .global {
     width: 90%;
     max-width: 110rem;
+    // max-width: 100%;
+    // height: 100%;
     display: flex;
     justify-content: center;
 
-    background-color: rgb(82, 112, 139);
+    background-color: var(--color-secondary);
 }
